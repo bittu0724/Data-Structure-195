@@ -13,12 +13,12 @@ void main()
     if(n > 10 || n <= 0)
     {
         printf("Invalid limit! Please enter a value between 1 and 10.");
-        return 0;
+        
     }
 
-    printf("\nEnter %d elements:\n", n);
+       printf("\nEnter %d elements:\n", n);
 
-    for(i = 0; i < n; i++)
+      for(i = 0; i < n; i++)
     {
         printf("Enter value %d: ", i + 1);
         scanf("%d", &a[i]);
@@ -36,7 +36,5 @@ void main()
     avg = (float)sum / n;
 
     printf("\n\nSum = %d", sum);
-    printf("\nAverage = %.2f", avg);
-
-    return 0;
+    printf("\nAverage = %.2f", avg);    
 }
